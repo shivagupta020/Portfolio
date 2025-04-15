@@ -12,24 +12,23 @@ const ProjectsSection: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: "AI Image Generator",
+      title: "AI-Powered Image-Based Shopping Assistant",
       category: "ai",
       image: "https://images.unsplash.com/photo-1579403124614-197f69d8187b",
-      description: "An application that generates images based on text descriptions using AI. Built with the OpenAI API and React.",
-      technologies: ["React", "OpenAI API", "TailwindCSS", "Next.js"],
-      liveLink: "#",
+      description: "Developed a shopping assistant web application that allows users to take a picture of a product, send it via Twilio, and receive similar product recommendations.",
+      technologies: ["React","OpenAI","TailwindCSS","Twilio","NestJs"],
+      liveLink: "https://snapped.ai/",
       githubLink: "#"
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: `Weather Dashboard`,
       category: "web",
-      image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91",
-      description: "A productivity app that helps users organize tasks, set deadlines, and track progress. Includes features like drag-and-drop, filtering, and data visualization.",
-      technologies: ["React", "TypeScript", "Firebase", "Redux", "ChartJS"],
+      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b",
+      description: "A weather dashboard that provides current conditions and forecasts for any location. Features include interactive maps, charts, and alerts.",
+      technologies: ["JavaScript", "WeatherAPI", "HTML/CSS", "CSS Grid"],
       liveLink: "#",
       githubLink: "#"
-     
     },
     {
       id: 3,
@@ -39,40 +38,40 @@ const ProjectsSection: React.FC = () => {
       description: "A modern portfolio website showcasing my projects and skills. Features smooth animations, responsive design, and contact form.",
       technologies: ["React", "TailwindCSS", "Framer Motion", "Vite"],
       liveLink: "#",
-      githubLink: "https://github.com/shivagupta020/Myportfolio"
+      githubLink: "https://github.com/shivagupta020/Portfolio"
      
     },
-    {
-      id: 4,
-      title: "E-Commerce Platform",
-      category: "web",
-      image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc",
-      description: "A fully responsive e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product search, shopping cart, and payment integration.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      liveLink: "#",
-      githubLink: "#"
+    // {
+    //   id: 4,
+    //   title: "E-Commerce Platform",
+    //   category: "web",
+    //   image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc",
+    //   description: "A fully responsive e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product search, shopping cart, and payment integration.",
+    //   technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+    //   liveLink: "#",
+    //   githubLink: "#"
      
-    },
-    {
-      id: 5,
-      title: "Recipe Finder App",
-      category: "mobile",
-      image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352",
-      description: "A mobile app that allows users to search for recipes based on ingredients they have. Includes features like saving favorites and meal planning.",
-      technologies: ["React Native", "Expo", "Firebase", "API Integration"],
-      liveLink: "#",
-      githubLink: "#"
-    },
-    {
-      id: 6,
-      title: "Weather Dashboard",
-      category: "web",
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b",
-      description: "A weather dashboard that provides current conditions and forecasts for any location. Features include interactive maps, charts, and alerts.",
-      technologies: ["JavaScript", "WeatherAPI", "D3.js", "CSS Grid"],
-      liveLink: "#",
-      githubLink: "#"
-    }
+    // },
+    // {
+    //   id: 5,
+    //   title: "Recipe Finder App",
+    //   category: "mobile",
+    //   image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352",
+    //   description: "A mobile app that allows users to search for recipes based on ingredients they have. Includes features like saving favorites and meal planning.",
+    //   technologies: ["React Native", "Expo", "Firebase", "API Integration"],
+    //   liveLink: "#",
+    //   githubLink: "#"
+    // },
+    // {
+    //   id: 6,
+    //   title: "Task Management App",
+    //   category: "web",
+    //   image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91",
+    //   description: "A productivity app that helps users organize tasks, set deadlines, and track progress. Includes features like drag-and-drop, filtering, and data visualization.",
+    //   technologies: ["React", "TypeScript", "Firebase", "Redux", "ChartJS"],
+    //   liveLink: "#",
+    //   githubLink: "#"
+    // }
   ];
 
   const categories = [
@@ -164,11 +163,11 @@ const ProjectsSection: React.FC = () => {
                       </a>
                     </Button>
                     <Button className="flex items-center gap-1 bg-portfolio-teal hover:bg-portfolio-teal/90" asChild>
-                      <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                       <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
                         <Eye size={16} />
                         <span>Live Demo</span>
-                      </a>
-                    </Button>
+                      </a> 
+                     </Button>
                   </div>
                 </CardContent>
               </Card>
